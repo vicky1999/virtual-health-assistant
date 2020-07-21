@@ -8,4 +8,13 @@
  		<servlet-name>login</servlet-name>
  		<url-pattern>/login</url-pattern>
  	</servlet-mapping>
+  	<servlet>
+ 		<servlet-name>signup</servlet-name>
+ 		<servlet-class>com.vhealth.auth.SignUp</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>signup</servlet-name>
+ 		<url-pattern>/signup</url-pattern>
+ 	</servlet-mapping>
+ 	
 </web-app>

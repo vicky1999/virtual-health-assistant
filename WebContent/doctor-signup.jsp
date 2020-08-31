@@ -11,7 +11,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta charset="ISO-8859-1">
-	<title>Sign Up</title>
+	<title>Doctor Signup</title>
 	<link rel="stylesheet" href="styles/login.css" />
 </head>
 
@@ -29,9 +29,9 @@
 
                 <div class="col-lg-12 login-form">
                     <div class="col-lg-12 login-form">
-                        <form action="signup" method="post">
+                        <form action="doctor-signup" method="post">
                             <div class="form-group">
-                                <label class="form-control-label">USERNAME</label>
+                                <label class="form-control-label">NAME</label>
                                 <input type="text" class="form-control" name="username" required>
                             </div>
                             <div class="form-group">
@@ -46,19 +46,33 @@
                                 <label class="form-control-label">Mobile Number</label>
                                 <input type="text" class="form-control"  name="mobile" required>
                             </div>
-                            
-                            <div class="form-group" >
-                                <label class="form-control-label">ROLE</label><br/>
-                                <div class="radios">
-	                                <input type="radio" id="patient" name="role" value="Patient">
-									<label for="patient">Patient</label>
-									<input type="radio" id="doctor" name="role" value="Doctor">
-									<label for="doctor">Doctor</label>
-									<input type="radio" id="lab" name="role" value="Lab Technician">
-									<label for="lab" >Lab Technician</label>
+                            <div class="form-group">
+                                <label class="form-control-label">Gender</label><br/>
+                                 <div class="radios">
+	                                <input type="radio" id="male" name="gender" value="Male">
+									<label for="male">Male</label>
+									<input type="radio" id="female" name="gender" value="Female">
+									<label for="female">Female</label>
                             	</div>
                             </div>
-
+                            <div class="form-group">
+                                <label class="form-control-label">Age</label>
+                                <input type="text" class="form-control"  name="age" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Fees</label>
+                                <input type="text" class="form-control"  name="fees" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Department</label>
+                                <input type="text" class="form-control"  name="department" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Degree</label>
+                                <input type="text" class="form-control"  name="degree" required>
+                            </div>
+                            
+                            
                             <div class="col-lg-12 loginbttm">
                                 <div class="col-lg-6 login-btm login-text">
                                     <!-- Error Message -->

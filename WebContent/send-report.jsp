@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="ISO-8859-1">
+	<title>Send Lab Reports</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -11,14 +13,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta charset="ISO-8859-1">
-	<title>Login</title>
 	<link rel="stylesheet" href="styles/login.css" />
-</head>
 
+</head>
 <body>
-	
-	
-    <div class="container">
+	<form action="send-file" method="POST" enctype = "multipart/form-data">
+			<div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-2"></div>
             <div class="col-lg-6 col-md-8 login-box">
@@ -26,29 +26,30 @@
                     <i class="fa fa-user" aria-hidden="true"></i>
                 </div>
                 <div class="col-lg-12 login-title">
-                    LOGIN
+                    Send Lab Reports
                 </div>
 
                 <div class="col-lg-12 login-form">
                     <div class="col-lg-12 login-form">
                         <form action="login" method="post">
                             <div class="form-group">
-                                <label class="form-control-label">USERNAME</label>
-                                <input type="text" class="form-control" name="username">
+                                <label class="form-control-label">Doctor Mail ID</label>
+            					<input type='email' name="doctor" />
                             </div>
                             <div class="form-group">
-                                <label class="form-control-label">PASSWORD</label>
-                                <input type="password" class="form-control"  name="password">
+                                <label class="form-control-label">Patient Mail ID</label>
+								<input type='email'   name="patient" />
                             </div>
-
+							<div class="upload file btn btn-lg btn-primary">
+								Upload Report
+								<input type="file" name="file"/>
+							</div><br/><br/>
                             <div class="col-lg-12 loginbttm">
                                 <div class="col-lg-6 login-btm login-text">
-                                    <c:if test="${not empty message}">
-									    <p style="color: red;">${message}</p>
-									</c:if>
+                                    <!-- Error Message -->
                                 </div>
                                 <div class="col-lg-6 login-btm login-button">
-                                    <button type="submit" class="btn btn-outline-primary">LOGIN</button>
+                                    <button type="submit" class="btn btn-outline-primary">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -57,6 +58,6 @@
                 <div class="col-lg-3 col-md-2"></div>
             </div>
         </div>
-	
+	</form>
 </body>
 </html>

@@ -9,12 +9,44 @@
  		<url-pattern>/login</url-pattern>
  	</servlet-mapping>
   	<servlet>
- 		<servlet-name>signup</servlet-name>
- 		<servlet-class>com.vhealth.auth.SignUp</servlet-class>
+ 		<servlet-name>doctor-signup</servlet-name>
+ 		<servlet-class>com.vhealth.auth.DoctorSignUp</servlet-class>
  	</servlet>
  	<servlet-mapping>
- 		<servlet-name>signup</servlet-name>
- 		<url-pattern>/signup</url-pattern>
+ 		<servlet-name>doctor-signup</servlet-name>
+ 		<url-pattern>/doctor-signup</url-pattern>
  	</servlet-mapping>
- 	
+ 	<servlet>
+ 		<servlet-name>lab-signup</servlet-name>
+ 		<servlet-class>com.vhealth.auth.LabSignUp</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>lab-signup</servlet-name>
+ 		<url-pattern>/lab-signup</url-pattern>
+ 	</servlet-mapping>
+ 	<servlet>
+ 		<servlet-name>user-signup</servlet-name>
+ 		<servlet-class>com.vhealth.auth.UserSignUp</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>user-signup</servlet-name>
+ 		<url-pattern>/user-signup</url-pattern>
+ 	</servlet-mapping>
+	<servlet>
+		<servlet-name>send-mail</servlet-name>
+		<servlet-class>mail.MailHandler</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>send-mail</servlet-name>
+  		<url-pattern>/send-mail</url-pattern>
+  	</servlet-mapping>
+  		<servlet>
+		<servlet-name>send-report</servlet-name>
+		<servlet-class>mail.MailHandler</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>send-report</servlet-name>
+  		<url-pattern>/send-report</url-pattern>
+  	</servlet-mapping>
+  	
 </web-app>

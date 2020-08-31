@@ -11,13 +11,13 @@ reports and to monitor the health of patients.<br/>
 <b><u>Login Page</u></b>
 <img src="Screenshots/Login.png" /> <hr/>
 <b><u>User(Patient) Index Page</u></b>
-<img src="Screenshots/User_Index.png" /> <hr/>
+<img src="Screenshots/User_index.png" /> <hr/>
 <b><u>View Doctors Page</u></b>
 <img src="Screenshots/View_Doctors.png" /> <hr/>
 <b><u>Send Appointment Request via mail</u></b>
 <img src="Screenshots/Send_Mail_Request.png" /> <hr/>
 <b><u>Doctor Index Page</u></b>
-<img src="Screenshots/Doctor_Index.png" /> <hr/>
+<img src="Screenshots/Doctor_index.png" /> <hr/>
 <b><u>View Appointment Requests sent by Patients</u></b>
 <img src="Screenshots/View_Requests_Doctor.png" /> <hr/>
 <b><u>View Lab Technicians Page</u></b>

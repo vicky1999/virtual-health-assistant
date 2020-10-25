@@ -1,4 +1,4 @@
-# virtual-health-assistant
+# Virtual Health Assistant
 
 <b><u> Objective:</u></b><br/>
 VMedico is an online medical services company recently established by a pharmaceutical company to
